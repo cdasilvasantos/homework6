@@ -1,7 +1,3 @@
-"""
-Tests for the App module.
-"""
-
 import logging
 import multiprocessing
 import pytest
