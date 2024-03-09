@@ -1,7 +1,3 @@
-"""
-Module: test_commands.py
-This module contains unit tests for the commands in the App class.
-"""
 import pytest
 from app import App
 
