@@ -17,20 +17,7 @@ class OperationCommand:
         else:
             raise ValueError(f"Unknown operation: {self.operation_name}")
 
-def calculate_and_print(a, b, operation_name):
-    try:
-        a_decimal, b_decimal = map(Decimal, [a, b])
-        command = OperationCommand(Calculator, operation_name, a_decimal, b_decimal)
-        result = command.execute()
-        print(f"The result of {a} {operation_name} {b} is equal to {result}")
-    except InvalidOperation:
-        print(f"Invalid number input: {a} or {b} is not a valid number.")
-    except ZeroDivisionError:
-        print("Error: Division by zero.")
-    except ValueError as e:
-        print(e)
-    except Exception as e:
-        print(f"An error occurred: {e}")
+
 
 def main():
     if len(sys.argv) == 1:
